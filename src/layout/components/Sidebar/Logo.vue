@@ -24,8 +24,8 @@ export default {
   },
   data() {
     return {
-      title: 'Vue Admin Template',
-      logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
+      title: '自动化测试平台',
+      logo: 'https://iconfont.alicdn.com/t/59a0acd9-29e7-4410-be86-c2745b8fa3fd.png'
     }
   }
 }
