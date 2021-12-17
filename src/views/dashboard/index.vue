@@ -1,6 +1,13 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
+    <div class="dashboard-weather">
+      <el-row>
+        <el-col span="5">
+          <weather></weather>
+        </el-col>
+    </el-row>
+    </div>
+
     <panel-group @handleSetLineChartData="handleSetLineChartData" />
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
@@ -12,6 +19,7 @@
 import { mapGetters } from 'vuex'
 import LineChart from '@/views/dashboard/components/LineChart'
 import PanelGroup from '@/views/dashboard/components/PanelGroup'
+import Weather from './components/Weather'
 
 const lineChartData = {
   newVisitis: {
@@ -36,7 +44,8 @@ export default {
   name: 'Dashboard',
   components: {
     LineChart,
-    PanelGroup
+    PanelGroup,
+    Weather
   },
   data() {
     return {
@@ -61,9 +70,8 @@ export default {
   &-container {
     margin: 30px;
   }
-  &-text {
-    font-size: 30px;
-    line-height: 46px;
+  &-weather {
+    z-index: -99;
   }
 }
 </style>
