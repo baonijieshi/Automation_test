@@ -20,11 +20,12 @@ export default {
         'weatherIconSize': '24',
         'alertIconSize': '18',
         'padding': '10px 10px 10px 10px',
-        'shadow': '1',
+        'shadow': '0',
         'language': 'auto',
         'borderRadius': '5',
         'fixed': 'false',
         'vertical': 'top',
+        'hover': 'true',
         'horizontal': 'left',
         'key': '46b1748c9dfa458eaa6a83c9d3da890e'
       }

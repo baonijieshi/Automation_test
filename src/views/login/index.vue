@@ -62,14 +62,14 @@ export default {
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!validUsername(value)) {
-        callback(new Error('Please enter the correct user name'))
+        callback(new Error('请输入你正确的用户名或密码！'))
       } else {
         callback()
       }
     }
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
-        callback(new Error('The password can not be less than 6 digits'))
+        callback(new Error('密码不能低于6位！'))
       } else {
         callback()
       }
@@ -198,7 +198,7 @@ $light_gray:#eee;
 
   .tips {
     font-size: 14px;
-    color: $bg;
+    color: #fff;
     margin-bottom: 10px;
 
     span {
